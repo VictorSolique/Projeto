@@ -1,0 +1,8 @@
+AULA LTPA - 03/05/2022
+
+	------------- ATIVIDADES ---------------------
+1 Adicionar ao github a atividade.
+2 Criar objeto produto_destaque e outro objeto produto, (div).
+3 Adicionar objetos criados na página principal, (index.html).
+
+observação aleátoria: ovelha Dolly foi o primeiro ser vivo a ser clonado 

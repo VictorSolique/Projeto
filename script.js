@@ -23,9 +23,16 @@ class ProdutoDestaque extends Produto {
 }
 
 
-const produto = new Produto("Nade", "01-04-2015", "Soro biologico contido em um objeto cilindrico", 80);
-const prodDestaque = new ProdutoDestaque("https://www.nicepng.com/png/detail/149-1490977_a-biotic-grenade-ana-biotic-grenade.png")
+const produto = new Produto("Coco Ralado em Flocos", "01-04-2022", "O coco é um dos alimentos mais nutritivos para a nossa saúde.", "R$ 39/Kg");
+const prodDestaque = new ProdutoDestaque("https://http2.mlstatic.com/D_NQ_NP_952582-MLB28262317631_092018-O.jpg");
 
 console.log(produto.mostrarProdutos(), prodDestaque.mostrarProdDestaque());
+
+let saidaPDest = document.getElementById("produto-destaque");
+saidaPDest.innerHTML = 
+`<img src='${prodDestaque.mostrarProdDestaque()}'/> <br>
+ <h2>${produto.nome} <br> ${produto.descricao} <br><br> <span>${produto.dataCadastro} <br> ${produto.preco}</span> <h2>`;
+
+
 
 
