@@ -59,22 +59,9 @@ saidaPDest.innerHTML =
 <br><br>
  `;
 
- let saidaProd = document.getElementById("produtos");
- saidaProd.innerHTML = 
- `
-
- <div class="container text-center">
- <div class="row">
-   <div class="col">
-       <div class="card" style="width: 18rem;">
-           <div class="card-body">
-               <h5 class="card-title">${produto1.nome}</h5>
-           <p class="card-text">${produto1.descricao}</p>
-           <a href="#" class="text-warning">${produto1.preco}</a>
-           </div>
-       </div>
-   </div>
-   <div class="col">
+function prods() {
+    return `
+    <div class="col">
        <div class="card" style="width: 18rem;">
            <div class="card-body">
                <h5 class="card-title">${produto2.nome}</h5>
@@ -83,15 +70,20 @@ saidaPDest.innerHTML =
            </div>
        </div>
    </div>
-   <div class="col">
-       <div class="card" style="width: 18rem;">
-           <div class="card-body">
-               <h5 class="card-title">${produto3.nome}</h5>
-           <p class="card-text">${produto3.descricao}</p>
-           <a href="#" class="text-warning">${produto3.preco}</a>
-           </div>
-       </div>
-   </div>
+    `
+}
+
+ let saidaProd = document.getElementById("produtos");
+ saidaProd.innerHTML = 
+ `
+
+ <br><br><br><br>
+ <div class="container text-center">
+ <div class="row">
+    ${prods()}
+    ${prods()}
+    ${prods()}
+
  </div>
 </div>
 <br><br><br><br>
