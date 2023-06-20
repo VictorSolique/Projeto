@@ -43,9 +43,9 @@ class ProdutoDestaque extends Produto {
 
 
 const produtoDest = new Produto("Coco Ralado em Flocos", "01-04-2022", "O coco é um dos alimentos mais nutritivos para a nossa saúde.", "R$ 39/Kg");
-const prodDestaque = new ProdutoDestaque("https://http2.mlstatic.com/D_NQ_NP_952582-MLB28262317631_092018-O.jpg");
+const prodDestaque = new ProdutoDestaque("https://http2.mlstatic.com/D_NQ_NP_952582-MLB28262317631_092018-O.jpg"); 
 
-const produto1 = new Produto("Pessêgo Aurora", "23-05-2023", "O pêssego é rico em fibras, bom para o funcionamento do intestino. Contém minerais como fósforo, magnésio, manganês, cobre, iodo e ferro.", "R$ 36/Kg");
+const produto1 = new Produto("Pêssego Aurora", "23-05-2023", "O pêssego é rico em fibras, bom para o funcionamento do intestino. Contém minerais como fósforo, magnésio, manganês, cobre, iodo e ferro.", "R$ 36/Kg");
 
 const produto2 = new Produto("Linguiça Apimentada", "24-03-2023", "Suculenta, com ingredientes especialmente selecionados e muito mais sabor.", "R$ 230/Kg");
 
