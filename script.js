@@ -8,8 +8,27 @@ class Produto {
         this.preco = preco;
     }
     mostrarProdutos() {
+        try {
+          return this.atributos();
+        }
+        catch(erro) {
+          console.log(erro);
+        }
         return this.nome +" "+ this.dataCadastro+" "+ this.descricao+" "+ this.preco;
     }
+    atributos() {
+    if(this.nome != "" && this.dataCadastro != "" && this.descricao != "" && this.preco != "") {
+      return {
+        nome: this.nome,
+        dataCadastro: this.dataCadastro,
+        descricao: this.descricao,
+        preco: this.preco        
+      };
+    }
+    else
+      throw new MeuErro("Erro, algum campo não foi preenchido.");
+    
+  }
 }
 
 class ProdutoDestaque extends Produto {
